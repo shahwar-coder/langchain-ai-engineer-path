@@ -1,0 +1,18 @@
+from langchain_openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+
+llm = OpenAI(model='gpt-3.5-turbo-instruct')
+
+result = llm.invoke("What is the capital of India?")
+
+print(result)
+
+# The capital of India is New Delhi.
+
+'''
+- It's better not to use this kind of llm code
+- It's not relevant now
+- Use ChatModels instead
+'''
