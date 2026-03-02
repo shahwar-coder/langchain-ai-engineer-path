@@ -50,3 +50,7 @@ That’s why search becomes ~O(log N) instead of O(N).
    #           V9
 
 # You “walk” the graph instead of scanning everything.
+
+'''BIG INSIGHT'''
+# Python list = container only.
+# Vector DB = container + intelligent navigation structure.
