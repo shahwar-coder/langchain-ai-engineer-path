@@ -33,6 +33,19 @@ scikit-learn
 # UI
 streamlit
 
+# LCEL viz
+grandalf
+
 # Pydantic
 pydantic
 email-validator
+
+# rag
+langchain_community
+pypdf
+bs4
+langchain_experimental
+chromadb
+tiktoken
+wikipedia
+faiss-cpu

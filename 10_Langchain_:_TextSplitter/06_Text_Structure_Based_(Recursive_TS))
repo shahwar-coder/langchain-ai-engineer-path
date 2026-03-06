@@ -1,0 +1,29 @@
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+# Sample text
+text = """
+Artificial Intelligence is transforming many industries.
+It helps machines learn from data and make intelligent decisions.
+
+AI is used in healthcare, finance, education, and robotics.
+It enables automation and smarter systems.
+"""
+
+# Initialize the splitter
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=100,
+    chunk_overlap=0
+)
+
+# Perform the split
+chunks = splitter.split_text(text)
+
+# Display results
+print(len(chunks))
+print(chunks)
+
+# 4
+# ['Artificial Intelligence is transforming many industries.', 
+#  'It helps machines learn from data and make intelligent decisions.', 
+#  'AI is used in healthcare, finance, education, and robotics.', 
+#  'It enables automation and smarter systems.']
